@@ -21,7 +21,7 @@ import edu.eci.arsw.parcial.service.ClimaServices;
  */
 @RestController
 @RequestMapping("/weather")
-public class ClimaAPIController {
+public class ClimaApiController {
 
     @Autowired
     private ClimaServices cs;
