@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://getbootstrap.com/docs/4.1/examples/album/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+
+        <title>Clima</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="./css/album.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header>
+            <div class="collapse bg-dark" id="navbarHeader">
+                <div class="container">
+                    <div class="row">
+                    </div>
+                </div>
+            </div>
+            <div class="navbar navbar-dark bg-dark shadow-sm">
+                <div class="container d-flex justify-content-between">
+                    <a href="https://getbootstrap.com/docs/4.1/examples/album/#" class="navbar-brand d-flex align-items-center">
+                        <strong>Clima</strong>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main role="main">
+
+            <section class="jumbotron text-center">
+                <div class="container">
+                    <h1 class="jumbotron-heading">Obten el estado del clima de tu ciudad</h1>
+                    <p class="lead text-muted">A continuación ingresa el nombre de la ciudad de la que quieres conocer su estado de clima, por ejemplo: London.</p>
+                    <p>
+                        <input id="City" type="text">
+                        <a class="btn btn-info btn-lg" onclick="getWeather($('#City').val())">Buscar</a>
+                    </p>
+                </div>
+            </section>
+            <div id="map-canvas"></div>
+            <div class="album py-5 bg-light">
+                <div class="container">
+                    
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="text-muted">
+            <div class="container">
+                <p>© ARSW Clima</p>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="./js/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+        <script src="./js/popper.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/holder.min.js"></script>
+        <script src="./js/ClimaController.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="348" height="225" viewBox="0 0 348 225" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="17" style="font-weight:bold;font-size:17pt;font-family:Arial, Helvetica, Open Sans, sans-serif">Thumbnail</text></svg></body></html>

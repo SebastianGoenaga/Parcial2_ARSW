@@ -1,0 +1,7 @@
+edu\eci\arsw\parcial\bean\ServiceProvaider.class
+edu\eci\arsw\parcial\bean\impl\OpenWeather.class
+edu\eci\arsw\parcial\service\contracts\IClimaServices.class
+edu\eci\arsw\parcial\model\HttpConnection.class
+edu\eci\arsw\parcial\RestApiDemoApplication.class
+edu\eci\arsw\parcial\controller\ClimaApiController.class
+edu\eci\arsw\parcial\service\ClimaServices.class

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: edu.ecu.arsw.parcial2_arsw.AppTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in edu.ecu.arsw.parcial2_arsw.AppTest
