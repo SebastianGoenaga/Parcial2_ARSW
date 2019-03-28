@@ -125,4 +125,29 @@ document.getElementById("demo").innerHTML = "name: " + obj.name + ", age: " + ob
 ```
 
 * Código de página con Mapa embebido [(Ver archivo)](index.html)
+
+# ARSW - 2 Parcial
+## Sebastian Goenaga
+### Aplicación en Heroku
+
+https://goenaga-arsw-t2.herokuapp.com/
+---
+
+### Probar los servicios REST ofrecidos localmente
+Dscargue el proyecto y ejecute el comando `mvn spring-boot:run`
+- Abra para probar `localhost:5000`
+- Abra `localhost:5000/weather/{ciudad}` para prober directamente los servicios REST
+
+### JavaDoc
+Descargue el repositorio y vaya al archivo ubicado en:
+apidocs/overview-summary.html
+
+#### Descripción arquitectura
+La siguiente aplicación expone un servicio que permite al usuario obtener el estado del clima de una ciudad dada por el mismo.
+
+- La arquitectura principal se fundamenta en MVC.
+
+- El cache es implementado en la clase `OpenWeather`
+
+- Para usar otro proveedor unicamente abria que crear otra clase que implemente la interface ServiceProvider
     
