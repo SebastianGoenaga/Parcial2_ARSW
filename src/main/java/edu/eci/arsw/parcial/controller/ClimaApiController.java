@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import edu.eci.arsw.parcial.service.ClimaServices;
 
 /**
- * APIRest que permite acceder a un conjunto de servicios a través de las rutas dadas.
+ * APIRest que permite acceder a un conjunto de servicios a través de la ruta /weather/ciudad.
  * 
  */
 @RestController

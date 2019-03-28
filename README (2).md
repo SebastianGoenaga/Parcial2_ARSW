@@ -1,5 +1,5 @@
 # ARSW - 2 Parcial
-## Jonathan Prieto
+## Sebastian Goenaga
 ### Aplicación en Heroku
  - [Link no disponible, correr localmente]()
 ---

@@ -15,9 +15,9 @@ public interface IClimaServices {
 
     /**
      *
-     * @param city Nombre de la ciudad a consultar su estado de clima
+     * @param ciudad Nombre de la ciudad a consultar su estado de clima
      * @return String, json con la información del estado del clima de la ciudad.
      * @throws IOException si el nombre de la ciudad no es valido
      */
-    public String getClimaCiudad(String city) throws IOException;
+    public String getClimaCiudad(String ciudad) throws IOException;
 }

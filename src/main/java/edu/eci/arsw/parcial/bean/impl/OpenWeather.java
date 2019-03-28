@@ -6,18 +6,19 @@
 package edu.eci.arsw.parcial.bean.impl;
 
 import java.io.IOException;
-import java.util.concurrent.ConcurrentHashMap;
-import org.springframework.stereotype.Service;
-import edu.eci.arsw.parcial.bean.ServiceProvaider;
-import edu.eci.arsw.parcial.model.HttpConnection;
-
 import java.util.Date;
+import java.util.concurrent.ConcurrentHashMap;
+
+import org.springframework.stereotype.Service;
+
+import edu.eci.arsw.parcial.URLConnectionMethods.HttpConnection;
+import edu.eci.arsw.parcial.bean.ServiceProvaider;
 
 @Service("OpenWeather")
 public class OpenWeather implements ServiceProvaider {
 
     /**
-     * Implementación de cache de manera concurrente.
+     * Implementación de cache concurrente.
      */
     private ConcurrentHashMap<String, String> cache = new ConcurrentHashMap<String, String>();
     Date date = new Date();
@@ -25,8 +26,10 @@ public class OpenWeather implements ServiceProvaider {
 
     /**
      * Obtener el contenido de la url especificada con la ciudad dada.
+     * 
+     * Si la ciudad fue consultada nuevamente en menos de 5 minutos se retornará el valor almacenado en el cache
      *
-     * @param clima nombre de la ciudad.
+     * @param ciudad nombre de la ciudad.
      * @throws IOException si el nombre de la ciudad no existe.
      */
     @Override

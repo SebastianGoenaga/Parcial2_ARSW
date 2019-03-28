@@ -1,5 +1,5 @@
 function getWeather(city) {
-    axios.get('/clima/' + city).then(function (response) {
+    axios.get('/weather/' + city).then(function (response) {
         var par = document.getElementById("Data");
         par.innerHTML = "";
         for (c in response.data) {

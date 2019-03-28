@@ -28,7 +28,7 @@ public class ClimaServices implements IClimaServices {
 
     /**
      *
-     * @param city the value of city
+     * @param ciudad de la ciudad a consultar su estado de clima
      * @throws IOException si no existe el nombre de la ciudad.
      */
     @Override
